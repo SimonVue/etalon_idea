@@ -8,7 +8,7 @@ html
 
 body
 	height: 100%
-	font-family: 'Nono Sans', sans-serif
+	font-family: 'Noto Sans', sans-serif
 	font-weight: normal
 
 .promo
@@ -20,18 +20,43 @@ body
 	padding: 160px 0 22px
 	color: #fff
 
+	@media(max-width: 426px)
+		height: 264px
+		padding: 62px 0 10px
+
 	&__logo
 		margin-bottom: 16px
+
+		@media(max-width: 426px)
+			width: 50px
+			height: 23px
+			margin-bottom: 14px
 
 	&__title
 		font-size: 60px
 		font-weight: bold
 		margin-bottom: 7px
 
+		@media(max-width: 769px)
+			font-size: 45px
+
+		@media(max-width: 426px)
+			font-size: 19px
+			line-height: 25px
+			margin-bottom: 1px
+
 	&__subtitle
 		font-size: 30px
 		line-height: 41px
 		margin-bottom: 224px
+
+		@media(max-width: 769px)
+			font-size: 27px
+
+		@media(max-width: 426px)
+			font-size: 11px
+			line-height: 15px
+			margin-bottom: 80px
 
 	&__link
 		display: block
@@ -44,34 +69,59 @@ body
 		&:hover
 			transform: scale(1.05)
 
+		@media(max-width: 426px)
+			width: 78px
+			font-size: 10px
+
 	i
 		font-size: 30px
 		margin-top: 15px
 
+		@media(max-width: 426px)
+			font-size: 10px
+			margin-top: 5px
 
 .message
 	text-align: center
-	padding: 48px 0
+	padding: 48px 15px
 	background: #E5E5E5
 
 	&__title
 		font-weight: 700
 		font-size: 30px
 		color: #765151
+		Letter-spacing: 1px
 		margin-bottom: 24px
+
+		@media(max-width: 426px)
+			font-size: 14px
+			line-height: 19px
 
 	&__text
 		font-size: 14px
 		line-height: 19px
-		max-width: 480px
+		max-width: 504px
+		color: #000
 		margin: 0 auto 30px
 		&:last-child
 			margin-bottom: 0
 
+		@media(max-width: 426px)
+			width: 280px
+			font-size: 9px
+			line-height: 12px
+
 .scores
 	background: #EAE7E7
-	padding: 48px 0
-	margin: 0 auto
+
+
+	.wrapper
+		max-width: 560px
+		padding: 48px 15px
+		margin: 0 auto
+
+		@media(max-width: 426px)
+			padding: 16px 0
 
 	&__title
 		max-width: 890px
@@ -80,19 +130,37 @@ body
 		font-weight: 700
 		line-height: 40px
 		color: #765151
+		text-transform: uppercase
 		margin: 0 auto 36px
+
+		@media(max-width: 426px)
+			font-size: 14px
+			line-height: 19px
+			width: 260px
+			margin-bottom: 16px
 
 	&__cards
 		margin: 0 auto 36px
 		display: flex
 		justify-content: center
-		max-width: 560px
+
+		@media(max-width: 570px)
+			display: flex
+			justify-content: center
+			margin: 0 auto 16px
 
 	.card
 		width: 268px
 		background: #fff
 		padding: 26px 0 28px
 		margin: 0 12px
+
+		@media(max-width: 570px)
+			width: 146px
+			height: 230px
+			padding: 16px 0 19px
+			margin: 0 auto
+
 
 		&__title
 			width: 200px
@@ -105,10 +173,21 @@ body
 			text-transform: uppercase
 			margin: 0 auto 24px
 
+			@media(max-width: 570px)
+				font-size: 10px
+				line-height: 13px
+				width: 130px
+				margin-bottom: 16px
+
 		&__img
 			width: 268px
 			height: 147px
 			margin-bottom: 24px
+
+			@media(max-width: 570px)
+				width: 146px
+				height: 80px
+				margin-bottom: 16px
 
 		&__text
 			margin: 0 auto
@@ -116,6 +195,11 @@ body
 			font-size: 14px
 			line-height: 19px
 			text-align: center
+
+			@media(max-width: 570px)
+				font-size: 8px
+				line-height: 10px
+				width: 130px
 
 	&__btn
 		display: block
@@ -131,15 +215,21 @@ body
 		padding: 12px 0
 		margin: 0 auto
 
+		@media(max-width: 426px)
+			width: 269px
+			height: 30px
+			font-size: 12px
+			padding: 8px 0
+
 		&:hover
 			background: #8f6161
 
-
-
-
 .subscribe
 	background: #F0E3DF
-	padding: 48px 0
+	padding: 48px 15px
+
+	@media (max-width: 426px)
+		padding: 16px 0
 
 	&__text
 		max-width: 974px
@@ -151,6 +241,14 @@ body
 		text-align: center
 		margin: 0 auto 24px
 
+		@media (max-width: 769px)
+			max-width: 880px
+
+		@media (max-width: 426px)
+			font-size: 12px
+			line-height: 16px
+			margin-bottom: 16px
+
 	&__social
 		display: flex
 		justify-content: center
@@ -158,25 +256,46 @@ body
 		p
 			font-size: 24px
 			letter-spacing: 1.78px
-			margin-right: 11.53px
 			color: #765151
+
+			@media (max-width: 426px)
+				font-size: 14px
+				line-height: 19px
 
 		i
 			font-size: 29px
-			margin-right: 18px
+			margin-left: 18px
 			color: #765151
-
+			@media (max-width: 426px)
+				font-size: 14px
+				margin-left: 10px
 
 .accordion
 	width: 100%
-	height: 927px
+	height: auto
 	background: #E5E5E5
 	padding: 48px 0 70px
+	display: block
+
+
+	@media (max-width: 426px)
+		height: auto
+		padding: 34px 0 22px
 
 	.wrapper
 		max-width: 1182px
 		margin: 0 auto
-		padding: 0 25px
+		padding: 0 15px
+
+	&__hide-text
+		font-size: 8.53px
+		letter-spacing: 2.05px
+		text-transform: uppercase
+		display: none
+
+		@media (max-width: 426px)
+			display: block
+			margin-bottom: 27px
 
 	&__title
 		font-size: 32px
@@ -185,9 +304,17 @@ body
 		text-align: center
 		margin-bottom: 35px
 
+		@media (max-width: 769px)
+			font-size: 24px
+
+		@media (max-width: 426px)
+			font-size: 20px
+			line-height: 27px
+
+
 	&__button
 		width: 100%
-		font-family: "Nono Sans", sans-serif
+		font-family: "Noto Sans", sans-serif
 		font-size: 20px
 		line-height: 27px
 		color: #404040
@@ -201,6 +328,12 @@ body
 		outline: none
 		transition: 0.4s
 
+		@media (max-width: 426px)
+			font-size: 12px
+			line-height: 15px
+			padding: 8px 0 0 0
+			margin-left: 0
+
 		&:after
 			font-family: FontAwesome, serif
 			content: "\f078" /* Unicode символ для "plus" sign (+) */
@@ -209,19 +342,24 @@ body
 			float: right
 			margin-left: 5px
 
+			@media (max-width: 426px)
+				font-size: 12px
+				color: #D6A76F
 
 	.active:after
 		content: "\f077" /* Unicode символ для "minus" sign (-) */
-
 
 	hr
 		color: #ADADAD
 		margin-top: 25px
 
+		@media (max-width: 426px)
+			background: #E5E5E5
+			margin-top: 14px
+
 	&__panel
 		background-color: #E5E5E5
 		color: #6E6E6E
-		font-size: 18px
 		line-height: 27px
 		max-width: 1100px
 		max-height: 0
@@ -230,6 +368,31 @@ body
 		margin-left: 10px
 
 		p
+			font-size: 18px
+			width: 95%
 			margin-top: 25px
+
+			@media (max-width: 426px)
+				font-size: 9px
+				line-height: 12px
+				color: #8E8E8E
+				width: 85%
+				margin-top: 8px
+
+.button-last
+	width: 187px
+	font-size: 10px
+	line-height: 16px
+	color: #9A9A9A
+	background: #fff
+	text-align: center
+	padding: 13px 0
+	margin-left: 10px
+	display: none
+
+	@media (max-width: 426px)
+		display: block
+	a
+		color: #D6BA81
 
 
