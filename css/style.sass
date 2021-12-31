@@ -3,14 +3,15 @@
 	padding: 0
 	box-sizing: border-box
 
+html
+	scroll-behavior: smooth
+
 body
 	height: 100%
 	font-family: 'Nono Sans', sans-serif
-
 	font-weight: normal
 
 .promo
-	max-width: 1440px
 	height: 680px
 	text-align: center
 	background-image: url('../img/background_promo.jpg')
@@ -32,12 +33,20 @@ body
 		line-height: 41px
 		margin-bottom: 224px
 
-	&__text
+	&__link
+		display: block
+		width: 213px
 		font-size: 30px
-		margin-bottom: 15px
+		text-decoration: none
+		color: #fff
+		margin: 0 auto 15px
+		transition: .2s
+		&:hover
+			transform: scale(1.05)
 
 	i
 		font-size: 30px
+		margin-top: 15px
 
 
 .message
@@ -121,8 +130,12 @@ body
 		text-decoration: none
 		padding: 12px 0
 		margin: 0 auto
+
 		&:hover
 			background: #8f6161
+
+
+
 
 .subscribe
 	background: #F0E3DF
@@ -148,12 +161,75 @@ body
 			margin-right: 11.53px
 			color: #765151
 
-
-
 		i
 			font-size: 29px
 			margin-right: 18px
 			color: #765151
 
+
+.accordion
+	width: 100%
+	height: 927px
+	background: #E5E5E5
+	padding: 48px 0 70px
+
+	.wrapper
+		max-width: 1182px
+		margin: 0 auto
+		padding: 0 25px
+
+	&__title
+		font-size: 32px
+		line-height: 32px
+		color: #404040
+		text-align: center
+		margin-bottom: 35px
+
+	&__button
+		width: 100%
+		font-family: "Nono Sans", sans-serif
+		font-size: 20px
+		line-height: 27px
+		color: #404040
+		cursor: pointer
+		padding-top: 23px
+		margin-left: 10px
+		padding-right: 20px
+		text-align: left
+		background: #E5E5E5
+		border: none
+		outline: none
+		transition: 0.4s
+
+		&:after
+			font-family: FontAwesome, serif
+			content: "\f078" /* Unicode символ для "plus" sign (+) */
+			font-size: 20px
+			color: #777
+			float: right
+			margin-left: 5px
+
+
+	.active:after
+		content: "\f077" /* Unicode символ для "minus" sign (-) */
+
+
+	hr
+		color: #ADADAD
+		margin-top: 25px
+
+	&__panel
+		background-color: #E5E5E5
+		color: #6E6E6E
+		font-size: 18px
+		line-height: 27px
+		max-width: 1100px
+		max-height: 0
+		overflow: hidden
+		transition: max-height 0.2s ease-out
+		margin-left: 10px
+
+		p
+			margin-top: 25px
 
 
