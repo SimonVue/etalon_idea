@@ -44,9 +44,19 @@ body {
   font-weight: bold;
   margin-bottom: 7px;
 }
-@media (max-width: 769px) {
+@media (max-width: 880px) {
   .promo__title {
     font-size: 45px;
+  }
+}
+@media (max-width: 660px) {
+  .promo__title {
+    font-size: 35px;
+  }
+}
+@media (max-width: 518px) {
+  .promo__title {
+    font-size: 28px;
   }
 }
 @media (max-width: 426px) {
@@ -61,9 +71,19 @@ body {
   line-height: 41px;
   margin-bottom: 224px;
 }
-@media (max-width: 769px) {
+@media (max-width: 880px) {
   .promo__subtitle {
     font-size: 27px;
+  }
+}
+@media (max-width: 660px) {
+  .promo__subtitle {
+    font-size: 20px;
+  }
+}
+@media (max-width: 518px) {
+  .promo__subtitle {
+    font-size: 16px;
   }
 }
 @media (max-width: 426px) {
@@ -85,6 +105,12 @@ body {
 .promo__link:hover {
   transform: scale(1.05);
 }
+@media (max-width: 660px) {
+  .promo__link {
+    font-size: 20px;
+    width: 145px;
+  }
+}
 @media (max-width: 426px) {
   .promo__link {
     width: 78px;
@@ -94,6 +120,11 @@ body {
 .promo i {
   font-size: 30px;
   margin-top: 15px;
+}
+@media (max-width: 660px) {
+  .promo i {
+    font-size: 20px;
+  }
 }
 @media (max-width: 426px) {
   .promo i {
@@ -198,7 +229,7 @@ body {
     width: 146px;
     height: 230px;
     padding: 16px 0 19px;
-    margin: 0 auto;
+    margin: 0 5px;
   }
 }
 .scores .card__title {
@@ -278,7 +309,7 @@ body {
 }
 @media (max-width: 426px) {
   .subscribe {
-    padding: 16px 0;
+    padding: 16px 15px;
   }
 }
 .subscribe__text {
@@ -294,6 +325,11 @@ body {
 @media (max-width: 769px) {
   .subscribe__text {
     max-width: 880px;
+  }
+}
+@media (max-width: 767px) {
+  .subscribe__text {
+    font-size: 20px;
   }
 }
 @media (max-width: 426px) {
@@ -312,6 +348,11 @@ body {
   letter-spacing: 1.78px;
   color: #765151;
 }
+@media (max-width: 767px) {
+  .subscribe__social p {
+    font-size: 16px;
+  }
+}
 @media (max-width: 426px) {
   .subscribe__social p {
     font-size: 14px;
@@ -322,6 +363,11 @@ body {
   font-size: 29px;
   margin-left: 18px;
   color: #765151;
+}
+@media (max-width: 767px) {
+  .subscribe__social i {
+    font-size: 16px;
+  }
 }
 @media (max-width: 426px) {
   .subscribe__social i {
@@ -394,7 +440,12 @@ body {
   outline: none;
   transition: 0.4s;
 }
-@media (max-width: 426px) {
+@media (max-width: 645px) {
+  .accordion__button {
+    font-size: 14px;
+  }
+}
+@media (max-width: 469px) {
   .accordion__button {
     font-size: 12px;
     line-height: 15px;
@@ -410,7 +461,12 @@ body {
   float: right;
   margin-left: 5px;
 }
-@media (max-width: 426px) {
+@media (max-width: 645px) {
+  .accordion__button:after {
+    font-size: 14px;
+  }
+}
+@media (max-width: 469px) {
   .accordion__button:after {
     font-size: 12px;
     color: #D6A76F;
@@ -444,7 +500,13 @@ body {
   width: 95%;
   margin-top: 25px;
 }
-@media (max-width: 426px) {
+@media (max-width: 645px) {
+  .accordion__panel p {
+    font-size: 14px;
+    width: 90%;
+  }
+}
+@media (max-width: 469px) {
   .accordion__panel p {
     font-size: 9px;
     line-height: 12px;
